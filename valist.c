@@ -47,7 +47,7 @@ int main ()
 {
   PrintFloats (3,3.14159,2.71828,1.41421);
   return 0;
-}  */
+}  
  /*为了直接包装vsprintf函数使用的一个例子。随便看看吧
   #include "stdafx.h"
 void func(char *format,...)
