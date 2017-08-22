@@ -49,3 +49,20 @@ int main ()
   return 0;
 }
 */
+ /*为了直接包装vsprintf函数使用的一个例子。随便看看吧
+  #include "stdafx.h"
+void func(char *format,...)
+{
+	char buffer[256];
+	va_list valist;
+	va_start(valist, format);
+	vsprintf(buffer, format, valist);
+	printf(buffer);
+	va_end(valist);
+}
+int main()
+{
+	func("%d is the % s",4,"sb");
+	return 0;
+}
+ */
